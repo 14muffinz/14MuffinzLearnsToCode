@@ -1,0 +1,26 @@
+/* while unfortunately ao3 recently made the change so that chater numbers are also part of their pdfs, making this sort of moot, the intention of this was to alter your chapteer numbers for things like prologues */
+/* a neat side effect of this one is being able to change the font and such */
+
+#chapter-1 .chapter.preface.group .title {
+  visibility: hidden;
+  line-height: 0;
+}
+
+#chapter-1 .chapter.preface.group .title::after {
+  content: "Prologue: Over Thinking";
+  visibility: visible;
+  line-height: 1em;
+  display: block;
+}
+
+#chapter-2 .chapter.preface.group .title {
+  visibility: hidden;
+  line-height: 0;
+}
+
+#chapter-2 .chapter.preface.group .title::after {
+  content: "okay lets see if this works";
+  visibility: visible;
+  line-height: 1em;
+  display: block;
+}
