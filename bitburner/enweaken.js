@@ -9,20 +9,21 @@ export async function main(ns) {
      while (true) {
           if (ns.getServerSecurityLevel(target) != ns.getServerMinSecurityLevel(target)) {
                await ns.weaken(target);
+          } else { // originally, i forgot to put this as an else! idiot.
+               await ns.hack(target)
           }
-          await ns.hack(target)
-       // i might take out the hack step later, but it only hacks if it's already at the minimum weakness so... no harm no foul?
-       // i just realised it's actually not set up like that. new update coming soon
           var target = "foodnstuff"
           if (ns.getServerSecurityLevel(target) != ns.getServerMinSecurityLevel(target)) {
                await ns.weaken(target);
+          } else {
+               await ns.hack(target)
           }
-          await ns.hack(target)
           var target = "sigma-cosmetics"
           if (ns.getServerSecurityLevel(target) != ns.getServerMinSecurityLevel(target)) {
                await ns.weaken(target);
+          } else {
+               await ns.hack(target)
           }
-          await ns.hack(target)
           var target = "joesguns"
           if (ns.getServerSecurityLevel(target) != ns.getServerMinSecurityLevel(target)) {
                await ns.weaken(target);
