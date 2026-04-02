@@ -1,4 +1,5 @@
-// i'm not sure why this worked when the stuff on the laptop didn't, so I'm dumping it here until I can figure it out
+// at first i didn't know why this looped properly and another version of it did it.
+// i forgot the brackets. like, the most important thing in coding. ugh.
 
 /** @param {NS} ns */
 export async function main(ns) {
