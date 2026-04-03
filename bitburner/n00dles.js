@@ -1,0 +1,10 @@
+// i figured that since n00dles is constantly weak, it needed its own loop
+export async function main(ns) {
+     while (true) {
+          if (ns.getServerMinSecurityLevel("n00dles") >= 1.050) {
+               await ns.weaken("n00dles");
+          } else {
+               await ns.hack("n00dles")
+          }
+     }
+}
