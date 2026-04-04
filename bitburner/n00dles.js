@@ -5,7 +5,7 @@ export async function main(ns) {
                await ns.weaken("n00dles");
           } else {
                await ns.hack("n00dles")
-          }
+          } await ns.sleep(1000)
      }
 }
 // breaking news, local idiot forgot to delete "min" and ruined his entire code
