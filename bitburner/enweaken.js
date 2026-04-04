@@ -42,6 +42,6 @@ export async function main(ns) {
           var target = "harakiri-sushi"
           if (ns.getServerSecurityLevel(target) != ns.getServerMinSecurityLevel(target)) {
                await ns.weaken(target);
-          }
+          } await ns.sleep(1000)
      }
 }
