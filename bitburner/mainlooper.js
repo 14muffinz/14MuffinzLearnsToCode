@@ -7,12 +7,15 @@ export async function main(ns) {
     while(true) {
         if (ns.getServerSecurityLevel(target) > securityThresh) {
             await ns.weaken(target);
+            await ns.sleep(1000);
         } else if (ns.getServerMoneyAvailable(target) < moneyThresh) {
             await ns.grow(target);
+            await ns.sleep(1000);
         } else {
             await ns.hack(target);
-        } await ns.sleep(1000)
+            await ns.sleep(1000);
+        } 
     }
 }
-
+// added a sleep, not sure if it's necessary, but i hope to reduce lag
 // this all loops as intended. my attempts to recreate/extend it... not so much.
