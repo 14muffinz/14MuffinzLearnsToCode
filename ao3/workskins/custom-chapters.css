@@ -1,4 +1,5 @@
-/* while unfortunately ao3 recently made the change so that chater numbers are also part of their pdfs, making this sort of moot, the intention of this was to alter your chapteer numbers for things like prologues */
+/* while unfortunately ao3 recently made the change so that chater numbers are also part of their pdfs, making this sort of moot*/ 
+/* the intention of this was to alter your chapteer numbers for things like prologues */
 /* a neat side effect of this one is being able to change the font and such */
 
 #chapter-1 .chapter.preface.group .title {
