@@ -1,0 +1,66 @@
+/*here's the changes I made on loki's fork */
+/* will delete later, i just want more accurate profile percentages */
+
+:root {
+    color-scheme: light dark;
+    --light-bg: ghostwhite;
+    --light-text: #000;
+
+    --dark-bg: #333;
+    --dark-text: #fff;
+    }
+
+body {
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont';
+}
+
+button {
+    background: light-dark(#eee, #555);
+    border: 1px solid light-dark(#bbb, #222);
+    color: light-dark(#444, #eee);
+}
+
+@media (prefers-color-scheme: dark) {
+    button:hover {
+        color: #999;
+        border-color: #000;
+        box-shadow: inset 2px 2px 2px #000;
+    }
+    button:disabled {
+        color: #999;
+        border-color: #000;
+        box-shadow: none;
+    }
+    button:disabled:hover {
+        color: #999;
+        border-color: #000;
+        box-shadow: none;
+    }
+}
+
+
+@media (prefers-color-scheme: light) {
+    button {
+        box-shadow: none;
+        border-top: 1px solid var(--light-bg);
+        border-left: 1px solid var(--light-bg);
+        background-image: linear-gradient(#fff 2%,#ddd 95%, #bbb 100%);
+    }
+    button:hover {
+        color: #900;
+        border-top: 1px solid #999;
+        border-left: 1px solid #999;
+        box-shadow: inset 2px 2px 2px #bbb;
+    }
+    button:disabled {
+        background-color: #bbb;
+        background-image: none;
+        color: #000;
+    }
+    button:disabled:hover {
+        background-color: #bbb;
+        background-image: none;
+        color: #000;
+        box-shadow: none;
+    }
+}
